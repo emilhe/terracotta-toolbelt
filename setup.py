@@ -1,6 +1,9 @@
-from setuptools import setup
+import setuptools
 import pathlib
 import os
+
+from setuptools import setup
+
 
 HERE = pathlib.Path(__file__).parent
 
@@ -13,7 +16,7 @@ setup(
     author="Emil Haldrup Eriksen",
     author_email="emil.h.eriksen@gmail.com",
     description="A small Terracotta tool collection",
-    version=os.getenv("CI_COMMIT_TAG", "v0.0.2").strip("v"),
+    version=os.getenv("CI_COMMIT_TAG", "v0.0.1").strip("v"),
     url='https://github.com/thedirtyfew/terracotta-toolbelt',
     packages=setuptools.find_packages(),
     long_description=README,
