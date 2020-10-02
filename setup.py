@@ -1,4 +1,3 @@
-import setuptools
 import pathlib
 import os
 
@@ -16,9 +15,9 @@ setup(
     author="Emil Haldrup Eriksen",
     author_email="emil.h.eriksen@gmail.com",
     description="A small Terracotta tool collection",
-    version=os.getenv("CI_COMMIT_TAG", "v0.0.1").strip("v"),
+    version=os.getenv("CI_COMMIT_TAG", "v0.0.5").strip("v"),
     url='https://github.com/thedirtyfew/terracotta-toolbelt',
-    packages=setuptools.find_packages(),
+    packages=["terracotta_toolbelt", "terracotta_toolbelt.extensions"],
     long_description=README,
     long_description_content_type="text/markdown",
     license="MIT",
