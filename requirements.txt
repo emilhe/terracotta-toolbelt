@@ -1,0 +1,7 @@
+terracotta
+flask
+numpy
+scipy
+rasterio
+rio-cogeo
+pyproj
