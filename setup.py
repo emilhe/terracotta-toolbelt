@@ -15,13 +15,13 @@ setup(
     author="Emil Haldrup Eriksen",
     author_email="emil.h.eriksen@gmail.com",
     description="A small Terracotta tool collection",
-    version=os.getenv("CI_COMMIT_TAG", "v0.0.5").strip("v"),
+    version=os.getenv("CI_COMMIT_TAG", "v0.0.7").strip("v"),
     url='https://github.com/thedirtyfew/terracotta-toolbelt',
     packages=["terracotta_toolbelt", "terracotta_toolbelt.extensions"],
     long_description=README,
     long_description_content_type="text/markdown",
     license="MIT",
     python_requires='>=3.6',
-    install_requires=['terracotta', 'flask', 'rasterio']
+    install_requires=['terracotta', 'flask', 'rasterio', 'pyproj', 'rio_cogeo', 'scipy']
 )
 
